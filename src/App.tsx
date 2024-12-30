@@ -1,7 +1,13 @@
 import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import { AppRoutes } from './routes/index.tsx';
 
 function App() {
-  return <div className="bg-slate-500 w-full min-h-screen">oi</div>;
+  return (
+    <BrowserRouter>
+      <AppRoutes />
+    </BrowserRouter>
+  );
 }
 
 export default App;
