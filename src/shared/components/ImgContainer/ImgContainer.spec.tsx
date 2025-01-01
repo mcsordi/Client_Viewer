@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import { ImgContainer } from './ImgContainer';
+import { ImgContainer } from './ImgContainer.tsx';
 import React from 'react';
 
 describe('<ImgContainer/>', () => {

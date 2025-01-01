@@ -1,6 +1,6 @@
 import { render } from '@testing-library/react';
-import { Theme } from './Theme';
 import React from 'react';
+import { Theme } from './Theme';
 
 describe('<Theme/>', () => {
   it('should render a theme button', () => {

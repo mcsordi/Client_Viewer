@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import { FaStar } from 'react-icons/fa';
 import React from 'react';
-import { NavDrawer } from './NavDrawer';
+import { NavDrawer } from './NavDrawer.tsx';
 
 describe('<NavDrawer/>', () => {
   it('should render a component with an icon and text', () => {

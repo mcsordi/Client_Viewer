@@ -1,5 +1,5 @@
 import { render } from '@testing-library/react';
-import { Drawer } from './Drawer';
+import { Drawer } from './Drawer.tsx';
 import React from 'react';
 
 describe('<Drawer/>', () => {

@@ -1,10 +1,10 @@
 import React, { useContext } from 'react';
-import { themeContext } from '../../contexts/ThemeContext/context.ts';
-import { ImgContainer } from './ImgContainer.tsx';
-import { NavDrawer } from './NavDrawer.tsx';
+import { themeContext } from '../../../contexts/ThemeContext/context.ts';
+import { ImgContainer } from '../ImgContainer/ImgContainer.tsx';
+import { NavDrawer } from '../NavDrawer/NavDrawer.tsx';
 import { IoMdHome } from 'react-icons/io';
 import { FaStar } from 'react-icons/fa';
-import { toggle } from '../../contexts/DrawerToggle/context.ts';
+import { toggle } from '../../../contexts/DrawerToggle/context.ts';
 
 type ITheme = {
   theme?: boolean;
