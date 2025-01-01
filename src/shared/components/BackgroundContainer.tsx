@@ -13,7 +13,7 @@ export const BackgroundContainer: React.FC<IchildrenTheme> = ({
   const { light } = useContext(themeContext);
   return (
     <section
-      className={`w-full min-h-screen ${light || theme ? `bg-slate-200` : 'bg-zinc-900'}`}
+      className={`flex w-full min-h-screen ${light || theme ? `bg-slate-200` : 'bg-zinc-900'}`}
     >
       {children}
     </section>

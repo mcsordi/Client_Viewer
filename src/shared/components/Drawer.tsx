@@ -13,7 +13,7 @@ export const Drawer: React.FC<ITheme> = ({ theme }) => {
   const { light } = useContext(themeContext);
   return (
     <div
-      className={`${light || theme ? `bg-white` : `bg-zinc-700`}   w-56 min-h-screen`}
+      className={`hidden md:flex flex-col ${light || theme ? `bg-white` : `bg-zinc-700`} w-56 min-h-screen`}
     >
       <ImgContainer path="./1678304807285.jpeg" />
       <NavDrawer
