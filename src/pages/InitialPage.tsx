@@ -1,12 +1,12 @@
 import React from 'react';
-import { ChangeTheme } from '../shared/components/ChangeTheme.tsx';
+import { Theme } from '../shared/components/Theme.tsx';
 
 import { BackgroundContainer } from '../shared/components/BackgroundContainer.tsx';
 
 export const InitialPage = () => {
   return (
     <BackgroundContainer>
-      <ChangeTheme />
+      <Theme />
     </BackgroundContainer>
   );
 };
