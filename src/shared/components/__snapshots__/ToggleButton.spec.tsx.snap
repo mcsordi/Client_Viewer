@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ToggleButton/> should match a snapshot 1`] = `
+<button
+  class="absolute bottom-0 cursor-pointer rounded-md h-10 px-6 font-medium text-lg bg-zinc-50 border border-zinc-400 flex md:hidden items-center"
+>
+  Mostrar
+</button>
+`;

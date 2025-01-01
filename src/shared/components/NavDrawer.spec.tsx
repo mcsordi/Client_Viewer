@@ -3,7 +3,7 @@ import { FaStar } from 'react-icons/fa';
 import React from 'react';
 import { NavDrawer } from './NavDrawer';
 
-describe('<ImgContainer/>', () => {
+describe('<NavDrawer/>', () => {
   it('should render a component with an icon and text', () => {
     render(
       <NavDrawer icon={<FaStar className="text-xl" />} text="Star page" />,

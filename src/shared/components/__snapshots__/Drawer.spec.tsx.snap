@@ -2,7 +2,7 @@
 
 exports[`<Drawer/> should render match a snapshot 1`] = `
 <div
-  class="bg-white   w-56 min-h-screen"
+  class="hidden md:flex flex-col bg-white w-56 min-h-screen"
 >
   <div
     class="flex w-full h-44 border-b-2 items-center justify-center"

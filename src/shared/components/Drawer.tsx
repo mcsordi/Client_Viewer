@@ -4,6 +4,7 @@ import { ImgContainer } from './ImgContainer.tsx';
 import { NavDrawer } from './NavDrawer.tsx';
 import { IoMdHome } from 'react-icons/io';
 import { FaStar } from 'react-icons/fa';
+import { toggle } from '../../contexts/DrawerToggle/context.ts';
 
 type ITheme = {
   theme?: boolean;
@@ -11,9 +12,10 @@ type ITheme = {
 
 export const Drawer: React.FC<ITheme> = ({ theme }) => {
   const { light } = useContext(themeContext);
+  const { show } = useContext(toggle);
   return (
     <div
-      className={`hidden md:flex flex-col ${light || theme ? `bg-white` : `bg-zinc-700`} w-56 min-h-screen`}
+      className={`${show ? `flex` : 'hidden'} md:flex flex-col ${light || theme ? `bg-white` : `bg-zinc-700`} w-56 min-h-screen`}
     >
       <ImgContainer path="./1678304807285.jpeg" />
       <NavDrawer

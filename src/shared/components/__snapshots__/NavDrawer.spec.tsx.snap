@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<ImgContainer/> should match a snapshot 1`] = `
+exports[`<NavDrawer/> should match a snapshot 1`] = `
 <div
   class="text-black
          cursor-pointer flex w-full justify-between items-center px-11 p-3.5 border-b-2"
