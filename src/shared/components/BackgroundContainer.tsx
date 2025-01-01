@@ -3,7 +3,7 @@ import { themeContext } from '../../contexts/ThemeContext/context.ts';
 
 type IchildrenTheme = {
   children: React.ReactNode;
-  theme: boolean;
+  theme?: boolean;
 };
 
 export const BackgroundContainer: React.FC<IchildrenTheme> = ({

@@ -4,7 +4,7 @@ import { MdLightMode } from 'react-icons/md';
 import { MdDarkMode } from 'react-icons/md';
 
 type ITheme = {
-  theme: boolean;
+  theme?: boolean;
 };
 
 export const Theme: React.FC<ITheme> = ({ theme }) => {
@@ -12,7 +12,7 @@ export const Theme: React.FC<ITheme> = ({ theme }) => {
 
   return (
     <button
-      className={` ${light && `bg-slate-700`} ${theme && `bg-slate-700`} rounded-md absolute right-0 border p-2 bg-white`}
+      className={` ${light || (theme && `bg-slate-700`)} rounded-md absolute right-0 border p-2 bg-white`}
       onClick={() => changeTheme()}
     >
       {light || theme ? (

@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ImgContainer/> should match a snapshot 1`] = `
+<div
+  class="flex w-full h-44 border-b-2 items-center justify-center"
+>
+  <img
+    alt="profile image"
+    class="w-24 h-24 rounded-full"
+    src="image.png"
+  />
+</div>
+`;
