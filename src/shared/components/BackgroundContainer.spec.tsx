@@ -21,4 +21,13 @@ describe('<BackgroundContainer/>', () => {
     const text = screen.getByText('hola');
     expect(text.parentElement).toHaveClass('bg-slate-200');
   });
+  it('should match a snapshot', () => {
+    render(
+      <BackgroundContainer theme={true}>
+        <p>hola</p>
+      </BackgroundContainer>,
+    );
+    const text = screen.getByText('hola');
+    expect(text.parentElement).toMatchSnapshot();
+  });
 });

@@ -19,4 +19,8 @@ describe('<Theme/>', () => {
     expect(container.firstChild).not.toHaveClass('bg-slate-700');
     expect(container.firstChild?.firstChild).toHaveClass('text-gray-700');
   });
+  it('should match a snapshot', () => {
+    const { container } = render(<Theme theme={false} />);
+    expect(container.firstChild).toMatchSnapshot();
+  });
 });
