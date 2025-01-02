@@ -2,12 +2,9 @@ import React, { useContext } from 'react';
 import { themeContext } from '../../../contexts/ThemeContext/context.ts';
 import { MdLightMode } from 'react-icons/md';
 import { MdDarkMode } from 'react-icons/md';
+import { TTheme } from '../../types/Theme.ts';
 
-type ITheme = {
-  theme?: boolean;
-};
-
-export const Theme: React.FC<ITheme> = ({ theme }) => {
+export const Theme: React.FC<TTheme> = ({ theme }) => {
   const { light, changeTheme } = useContext(themeContext);
 
   return (

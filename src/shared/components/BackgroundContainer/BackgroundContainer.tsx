@@ -1,13 +1,8 @@
 import React, { useContext } from 'react';
 import { themeContext } from '../../../contexts/ThemeContext/context.ts';
-import { toggle } from '../../../contexts/DrawerToggle/context.ts';
+import { TChildrenTheme } from '../../types/ChildrenTheme.ts';
 
-type IchildrenTheme = {
-  children: React.ReactNode;
-  theme?: boolean;
-};
-
-export const BackgroundContainer: React.FC<IchildrenTheme> = ({
+export const BackgroundContainer: React.FC<TChildrenTheme> = ({
   children,
   theme,
 }) => {

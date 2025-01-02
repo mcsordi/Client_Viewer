@@ -3,7 +3,7 @@
 exports[`<NavDrawer/> should match a snapshot 1`] = `
 <div
   class="text-black
-         cursor-pointer flex w-full justify-between items-center px-11 p-3.5 border-b-2"
+         cursor-pointer flex w-full justify-between items-center px-11 p-3.5 border-b-2 hover:bg-neutral-200 hover:text-black"
 >
   <svg
     class="text-xl"

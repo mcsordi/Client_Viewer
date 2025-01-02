@@ -8,10 +8,6 @@ import { DrawerToggle } from './contexts/DrawerToggle/index.tsx';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ThemeContext>
-      <DrawerToggle>
-        <App />
-      </DrawerToggle>
-    </ThemeContext>
+    <App />
   </React.StrictMode>,
 );
