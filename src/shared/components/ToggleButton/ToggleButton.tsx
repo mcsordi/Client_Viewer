@@ -2,10 +2,7 @@ import React, { useContext } from 'react';
 import { toggle } from '../../../contexts/DrawerToggle/context.ts';
 import { RiMenuFold4Fill } from 'react-icons/ri';
 
-type TToggleButton = {
-  visible?: boolean;
-};
-export const ToggleButton: React.FC<TToggleButton> = ({ visible }) => {
+export const ToggleButton: React.FC = () => {
   const { show, toggleState } = useContext(toggle);
   return (
     <button
@@ -13,7 +10,7 @@ export const ToggleButton: React.FC<TToggleButton> = ({ visible }) => {
        bg-zinc-50 border border-zinc-400 flex sm:hidden items-center"
       onClick={() => toggleState()}
     >
-      {show || visible ? (
+      {show ? (
         <RiMenuFold4Fill className="rotate-180 transition-all" />
       ) : (
         <RiMenuFold4Fill className="transition-all" />

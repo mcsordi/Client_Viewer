@@ -5,14 +5,13 @@ import { NavDrawer } from '../NavDrawer/NavDrawer.tsx';
 import { IoMdHome } from 'react-icons/io';
 import { FaStar } from 'react-icons/fa';
 import { toggle } from '../../../contexts/DrawerToggle/context.ts';
-import { TTheme } from '../../types/Theme.ts';
 
-export const Drawer: React.FC<TTheme> = ({ theme }) => {
+export const Drawer: React.FC = () => {
   const { light } = useContext(themeContext);
   const { show } = useContext(toggle);
   return (
     <div
-      className={`${show ? `flex` : 'hidden'} sm:flex flex-col ${light || theme ? `bg-white` : `bg-zinc-700`}
+      className={`${show ? `flex` : 'hidden'} sm:flex flex-col ${light ? `bg-white` : `bg-zinc-700`}
         w-56 min-h-screen`}
     >
       <ImgContainer path="./1678304807285.jpeg" />
@@ -24,8 +23,8 @@ export const Drawer: React.FC<TTheme> = ({ theme }) => {
       />
 
       <NavDrawer
-        whereTo="/pagina-secundaria"
-        text="star page"
+        whereTo="/cidades"
+        text="Cidades"
         icon={<FaStar className="text-xl" />}
       />
     </div>

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Drawer/> should render match a snapshot 1`] = `
+exports[`<Drawer/> should match a snapshot 1`] = `
 <div
   class="hidden sm:flex flex-col bg-white
         w-56 min-h-screen"
@@ -18,7 +18,7 @@ exports[`<Drawer/> should render match a snapshot 1`] = `
     href="/pagina-inicial"
   >
     <div
-      class="text-gray-200
+      class="text-black
          cursor-pointer flex w-full justify-between items-center px-11 p-3.5 border-b-2 hover:bg-neutral-200 hover:text-black"
     >
       <svg
@@ -47,7 +47,7 @@ exports[`<Drawer/> should render match a snapshot 1`] = `
     href="/pagina-secundaria"
   >
     <div
-      class="text-gray-200
+      class="text-black
          cursor-pointer flex w-full justify-between items-center px-11 p-3.5 border-b-2 hover:bg-neutral-200 hover:text-black"
     >
       <svg
