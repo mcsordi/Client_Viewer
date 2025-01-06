@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header/> should match a snapshot 1`] = `
+<h1
+  class="text-black  text-2xl font-roboto sm:text-3xl md:text-4xl"
+>
+  Titulo
+</h1>
+`;

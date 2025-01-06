@@ -2,6 +2,7 @@ import React from 'react';
 import { BackgroundContainer } from '../../shared/components/BackgroundContainer/BackgroundContainer.tsx';
 import { Drawer } from '../../shared/components/Drawer/Drawer.tsx';
 import { ToggleButton } from '../../shared/components/ToggleButton/ToggleButton.tsx';
+import { Header } from '../../shared/components/Header/Header.tsx';
 
 type TOptionsPage = {
   children: React.ReactNode;
@@ -17,9 +18,7 @@ export const MainPage: React.FC<TOptionsPage> = ({ children, menu, title }) => {
         <div className="flex items-center justify-between w-full py-6 sm:py-8 md:py-10">
           <div className="flex gap-3">
             <ToggleButton />
-            <h1 className="text-2xl font-roboto sm:text-3xl md:text-4xl">
-              {title}
-            </h1>
+            <Header header={title} />
           </div>
         </div>
         {menu && <div className="flex min-w-full">{menu}</div>}
