@@ -3,6 +3,7 @@ import { themeContext } from '../../../contexts/ThemeContext/context.ts';
 import { ImgContainer } from '../ImgContainer/ImgContainer.tsx';
 import { NavDrawer } from '../NavDrawer/NavDrawer.tsx';
 import { toggle } from '../../../contexts/DrawerToggle/context.ts';
+import { Theme } from '../Theme/Theme.tsx';
 
 export const Drawer: React.FC = () => {
   const { light } = useContext(themeContext);
@@ -25,6 +26,8 @@ export const Drawer: React.FC = () => {
           />
         );
       })}
+
+      <Theme />
     </div>
   );
 };

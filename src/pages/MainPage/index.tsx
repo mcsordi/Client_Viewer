@@ -1,7 +1,6 @@
 import React from 'react';
 import { BackgroundContainer } from '../../shared/components/BackgroundContainer/BackgroundContainer.tsx';
 import { Drawer } from '../../shared/components/Drawer/Drawer.tsx';
-import { Theme } from '../../shared/components/Theme/Theme.tsx';
 import { ToggleButton } from '../../shared/components/ToggleButton/ToggleButton.tsx';
 
 type TOptionsPage = {
@@ -22,7 +21,6 @@ export const MainPage: React.FC<TOptionsPage> = ({ children, menu, title }) => {
               {title}
             </h1>
           </div>
-          <Theme />
         </div>
         {menu && <div className="flex min-w-full">{menu}</div>}
         <div className="flex-1 overflow-auto">{children}</div>

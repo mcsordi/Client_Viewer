@@ -1,4 +1,4 @@
-import { render } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import React from 'react';
 import { Theme } from './Theme';
 import { themeContext } from '../../../contexts/ThemeContext/context';
@@ -6,12 +6,13 @@ import { themeContext } from '../../../contexts/ThemeContext/context';
 describe('<Theme/>', () => {
   it('should render a theme button', () => {
     const changeTheme = () => {};
-    const { container } = render(
+    render(
       <themeContext.Provider value={{ light: false, changeTheme }}>
         <Theme />
       </themeContext.Provider>,
     );
-    expect(container.firstChild).toHaveClass('rounded-md border p-2 bg-white');
+    const textButton = screen.getByText('Alterar Tema');
+    expect(textButton.parentElement).toHaveClass('bg-white absolute bottom-0');
   });
   it('should render a button with slate background', () => {
     const changeTheme = () => {};
