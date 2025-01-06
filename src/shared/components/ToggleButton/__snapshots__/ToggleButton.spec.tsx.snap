@@ -2,10 +2,10 @@
 
 exports[`<ToggleButton/> should match a snapshot 1`] = `
 <button
-  class="absolute top-0 cursor-pointer rounded-md h-10 px-2 font-medium text-3xl bg-zinc-50 border border-zinc-400 flex sm:hidden items-center"
+  class="relative top-0 cursor-pointer rounded-md h-10 px-2 font-medium text-3xl bg-zinc-50 flex sm:hidden items-center"
 >
   <svg
-    class="transition-all"
+    class="transition-all duration-500"
     fill="currentColor"
     height="1em"
     stroke="currentColor"

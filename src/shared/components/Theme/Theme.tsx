@@ -8,7 +8,7 @@ export const Theme: React.FC = () => {
 
   return (
     <button
-      className={` ${light && `bg-slate-700`} rounded-md absolute right-0 border p-2 bg-white`}
+      className={` ${light && `bg-slate-700`} rounded-md h-11 border p-2 bg-white`}
       onClick={() => changeTheme()}
     >
       {light ? (

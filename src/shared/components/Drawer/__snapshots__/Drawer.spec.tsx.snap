@@ -2,7 +2,7 @@
 
 exports[`<Drawer/> should match a snapshot 1`] = `
 <div
-  class="flex sm:flex flex-col bg-white
+  class="flex absolute z-10 sm:flex sm:relative flex-col bg-white
         w-56 min-h-screen"
 >
   <div
@@ -19,7 +19,7 @@ exports[`<Drawer/> should match a snapshot 1`] = `
   >
     <div
       class="text-black
-         cursor-pointer flex w-full justify-between items-center px-11 p-3.5 border-b-2
+         cursor-pointer flex w-full items-center gap-5 px-11 p-3.5 border-b-2
           hover:bg-neutral-200 hover:text-black false
          "
     >

@@ -10,7 +10,7 @@ export const Drawer: React.FC = () => {
 
   return (
     <div
-      className={`${show ? `flex` : 'hidden'} sm:flex flex-col ${light ? `bg-white` : `bg-zinc-700`}
+      className={`${show ? `flex absolute z-10` : 'hidden'} sm:flex sm:relative flex-col ${light ? `bg-white` : `bg-zinc-700`}
         w-56 min-h-screen`}
     >
       <ImgContainer path="./1678304807285.jpeg" />

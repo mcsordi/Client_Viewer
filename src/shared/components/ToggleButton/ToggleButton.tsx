@@ -6,14 +6,14 @@ export const ToggleButton: React.FC = () => {
   const { show, toggleState } = useContext(toggle);
   return (
     <button
-      className="absolute top-0 cursor-pointer rounded-md h-10 px-2 font-medium text-3xl
-       bg-zinc-50 border border-zinc-400 flex sm:hidden items-center"
+      className="relative top-0 cursor-pointer rounded-md h-10 px-2 font-medium text-3xl
+       bg-zinc-50 flex sm:hidden items-center"
       onClick={() => toggleState()}
     >
       {show ? (
-        <RiMenuFold4Fill className="rotate-180 transition-all" />
+        <RiMenuFold4Fill className="rotate-180 transition-all duration-500" />
       ) : (
-        <RiMenuFold4Fill className="transition-all" />
+        <RiMenuFold4Fill className="transition-all duration-500" />
       )}
     </button>
   );

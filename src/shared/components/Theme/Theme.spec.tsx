@@ -11,9 +11,7 @@ describe('<Theme/>', () => {
         <Theme />
       </themeContext.Provider>,
     );
-    expect(container.firstChild).toHaveClass(
-      'rounded-md absolute right-0 border p-2 bg-white',
-    );
+    expect(container.firstChild).toHaveClass('rounded-md border p-2 bg-white');
   });
   it('should render a button with slate background', () => {
     const changeTheme = () => {};
