@@ -5,6 +5,7 @@ import { IoMdHome } from 'react-icons/io';
 import { FaStar } from 'react-icons/fa';
 import { MainPage } from '../pages/MainPage/index.tsx';
 import { FaHeart } from 'react-icons/fa';
+import { MenuBarContainer } from '../shared/components/MenuBarContainer/MenuBarContainer.tsx';
 
 export const AppRoutes = () => {
   const { handleDrawerOptions } = useContext(toggle);
@@ -33,8 +34,11 @@ export const AppRoutes = () => {
       <Route
         path="/"
         element={
-          <MainPage title="Página Inicial" menu="Barra de menu">
-            <div className="flex">
+          <MainPage
+            title="Página Inicial"
+            menu={<MenuBarContainer visible bVisible text="nova" />}
+          >
+            <div className="flex mt-5">
               <p>página inicial</p>
             </div>
           </MainPage>

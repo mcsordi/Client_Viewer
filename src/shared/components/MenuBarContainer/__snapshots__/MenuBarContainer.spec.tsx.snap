@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MenuBarContainer/> should match a snapshot 1`] = `
+<div
+  class="w-full p-3.5 shadow-md min-h-16 bg-white rounded-md flex justify-between"
+>
+  <input
+    class="outline-none text-lg border rounded-r-md p-2 font-medium sm:w-96"
+    placeholder="Pesquisar..."
+    type="search"
+  />
+  <button
+    class="font-roboto text-lg flex items-center gap-2 border bg-slate-500 text-white px-3.5 rounded-md font-bold hover:bg-amber-400 transition-all uppercase"
+  >
+    novo
+    <svg
+      fill="currentColor"
+      height="1em"
+      stroke="currentColor"
+      stroke-width="0"
+      viewBox="0 0 24 24"
+      width="1em"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M15 2.013H9V9H2v6h7v6.987h6V15h7V9h-7z"
+      />
+    </svg>
+  </button>
+</div>
+`;
