@@ -9,7 +9,7 @@ export const MenuInput: React.FC<{ visible?: boolean }> = ({
         <input
           placeholder="Pesquisar..."
           type="search"
-          className="outline-none text-lg border rounded-r-md p-2 font-medium sm:w-96"
+          className="outline-none text-lg border rounded-md p-2 font-medium sm:w-96"
         />
       )
     );

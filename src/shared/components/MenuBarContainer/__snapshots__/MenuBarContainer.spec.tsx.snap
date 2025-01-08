@@ -2,10 +2,10 @@
 
 exports[`<MenuBarContainer/> should match a snapshot 1`] = `
 <div
-  class="w-full p-3.5 shadow-md min-h-16 bg-white rounded-md flex justify-between"
+  class="bg-zinc-700 w-full p-3.5 shadow-md min-h-16 rounded-md flex justify-between"
 >
   <input
-    class="outline-none text-lg border rounded-r-md p-2 font-medium sm:w-96"
+    class="outline-none text-lg border rounded-md p-2 font-medium sm:w-96"
     placeholder="Pesquisar..."
     type="search"
   />
