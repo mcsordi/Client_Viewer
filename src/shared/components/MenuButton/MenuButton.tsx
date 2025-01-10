@@ -1,10 +1,10 @@
 import React from 'react';
-import { TMenuButton } from '../../types/MenuButton';
+
 import { BiPlusMedical } from 'react-icons/bi';
 
-export const MenuButton: React.FC<TMenuButton> = ({
-  visible = false,
+export const MenuButton: React.FC<{ text?: string; visible?: boolean }> = ({
   text,
+  visible,
 }) => {
   {
     return (

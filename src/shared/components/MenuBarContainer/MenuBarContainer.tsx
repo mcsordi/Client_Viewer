@@ -1,12 +1,12 @@
 import React, { useContext } from 'react';
 import { MenuInput } from '../MenuInput/MenuInput.tsx';
 import { MenuButton } from '../MenuButton/MenuButton.tsx';
-import { TMenuButton } from '../../types/MenuButton.ts';
 import { themeContext } from '../../../contexts/ThemeContext/context.ts';
-import { MenuButtonTools } from '../MenuButtonTools/MenuButtonTools.tsx';
+import { MenuButtonTool } from '../MenuButtonTools/MenuButtonTool.tsx';
 import { MenuContainerTools } from '../MenuContainerTools/MenuContainerTools.tsx';
 import { tools } from '../MenuButtonTools/Tools.tsx';
 import { FocusTool } from '../../../contexts/FocusTool/index.tsx';
+import { TMenuButton } from '../../types/MenuButton.ts';
 
 export const MenuBarContainer: React.FC<TMenuButton> = ({
   visible,
@@ -24,7 +24,7 @@ export const MenuBarContainer: React.FC<TMenuButton> = ({
         <MenuContainerTools visible={tVisible}>
           {tools.map((tool) => {
             return (
-              <MenuButtonTools
+              <MenuButtonTool
                 key={tool.text}
                 text={tool.text}
                 icon={tool.icon}

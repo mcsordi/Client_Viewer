@@ -2,7 +2,9 @@
 
 exports[`<MenuInput/> should match a snapshot 1`] = `
 <input
-  class="outline-none text-lg border rounded-md p-2 font-medium sm:w-96"
+  class="bg-slate-200 placeholder:text-gray-500 border-gray-500 focus:bg-slate-300 transition-all
+               focus:placeholder:text-gray-700
+             outline-none text-lg border rounded-md p-2 font-medium sm:w-96"
   placeholder="Pesquisar..."
   type="search"
 />

@@ -10,7 +10,7 @@ describe('<MenuBarContainer/>', () => {
     expect(container).toBeInTheDocument();
   });
   it('should render a MenuBarComponent with children', () => {
-    render(<MenuBarContainer visible bVisible text="novo" />);
+    render(<MenuBarContainer visible text="novo" />);
     const textButton = screen.getByText('novo');
     expect(textButton).toBeInTheDocument();
     expect(textButton.parentNode?.firstChild).toBeInTheDocument();
@@ -19,7 +19,7 @@ describe('<MenuBarContainer/>', () => {
     const changeTheme = () => {};
     render(
       <themeContext.Provider value={{ light: true, changeTheme }}>
-        <MenuBarContainer visible bVisible text="novo" />
+        <MenuBarContainer visible text="novo" />
       </themeContext.Provider>,
     );
     const textButton = screen.getByText('novo');
@@ -29,7 +29,7 @@ describe('<MenuBarContainer/>', () => {
     const changeTheme = () => {};
     render(
       <themeContext.Provider value={{ light: false, changeTheme }}>
-        <MenuBarContainer visible bVisible text="novo" />
+        <MenuBarContainer visible text="novo" />
       </themeContext.Provider>,
     );
     const textButton = screen.getByText('novo');
@@ -39,7 +39,7 @@ describe('<MenuBarContainer/>', () => {
     const changeTheme = () => {};
     render(
       <themeContext.Provider value={{ light: false, changeTheme }}>
-        <MenuBarContainer visible bVisible text="novo" />
+        <MenuBarContainer visible text="novo" />
       </themeContext.Provider>,
     );
     const textButton = screen.getByText('novo');

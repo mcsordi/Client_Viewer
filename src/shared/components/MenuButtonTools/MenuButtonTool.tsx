@@ -2,11 +2,11 @@ import React, { useContext } from 'react';
 import { themeContext } from '../../../contexts/ThemeContext/context.ts';
 import { focusTool } from '../../../contexts/FocusTool/context.ts';
 
-type TButtonTolls = {
+type TButtonToll = {
   text?: string;
   icon?: React.ReactNode;
 };
-export const MenuButtonTools: React.FC<TButtonTolls> = ({ text, icon }) => {
+export const MenuButtonTool: React.FC<TButtonToll> = ({ text, icon }) => {
   const { light } = useContext(themeContext);
   const { focus, setFocus } = useContext(focusTool);
 
@@ -21,7 +21,7 @@ export const MenuButtonTools: React.FC<TButtonTolls> = ({ text, icon }) => {
       onBlur={() => setFocus(false)}
     >
       {icon}
-      {text}
+      <span className="hidden sm:flex">{text}</span>
     </button>
   );
 };

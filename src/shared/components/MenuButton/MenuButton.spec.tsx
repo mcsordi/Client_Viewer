@@ -13,7 +13,7 @@ describe('<MenuButton/>', () => {
     expect(container).toHaveTextContent('');
   });
   it('should match a snapshot', () => {
-    const { container } = render(<MenuButton visible bVisible text="nova" />);
+    const { container } = render(<MenuButton visible text="nova" />);
     expect(container).toMatchSnapshot();
   });
 });
