@@ -34,10 +34,7 @@ export const AppRoutes = () => {
       <Route
         path="/"
         element={
-          <MainPage
-            title="Página Inicial"
-            menu={<MenuBarContainer visible bVisible text="nova" />}
-          >
+          <MainPage title="Página Inicial" menu={<MenuBarContainer tVisible />}>
             <div className="flex mt-5">
               <p>página inicial</p>
             </div>
