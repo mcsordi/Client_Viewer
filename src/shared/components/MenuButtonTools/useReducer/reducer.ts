@@ -1,5 +1,5 @@
 import * as type from "../useReducer/action.ts"
-export const reducer = (state, action) => {
+export const reducer = (state: { state: string[] }, action: { type: string }) => {
     switch (action.type) {
         case type.SAVE_TYPE: {
             return console.log("salvar")

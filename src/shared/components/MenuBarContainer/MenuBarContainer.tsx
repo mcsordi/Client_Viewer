@@ -29,6 +29,7 @@ export const MenuBarContainer: React.FC<TMenuButton> = ({
                 text={tool.text}
                 icon={tool.icon}
                 type={tool.type}
+                loading={tool.loading}
               />
             );
           })}

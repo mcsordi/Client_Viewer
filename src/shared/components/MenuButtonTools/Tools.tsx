@@ -11,25 +11,30 @@ export const tools = [
     text: 'Salvar',
     icon: <IoMdSave className="text-xl" />,
     type: types.SAVE_TYPE,
+    loading: false,
   },
   {
     text: 'Salvar e voltar',
     icon: <IoMdSave className="text-xl" />,
     type: types.SAVE_BACK_TYPE,
+    loading: true,
   },
   {
     text: 'Apagar',
     icon: <TbTrashFilled className="text-lg" />,
     type: types.DELETE_TYPE,
+    loading: false,
   },
   {
     text: 'novo',
     icon: <PiPlusBold className="text-xl" />,
     type: types.NEW_TYPE,
+    loading: false,
   },
   {
     text: 'voltar',
     icon: <IoMdArrowBack className="text-lg" />,
     type: types.BACK_TYPE,
+    loading: false,
   },
 ];

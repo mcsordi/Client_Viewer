@@ -1,3 +1,3 @@
-export const values = {
+export const values: { state: string[] } = {
     state: []
 }

@@ -5,8 +5,8 @@ exports[`<MenuButtonTools/> should match a snapshot 1`] = `
   class="bg-zinc-800 text-white
     flex items-center px-3 py-2 gap-2 uppercase rounded-md font-roboto
     first:bg-amber-400 first:text-white first:hover:text-white font-medium hover:border
-     hover:border-amber-400 focus:bg-amber-400 focus:text-white
-    hover:text-amber-400 hover:stroke- border transition-all"
+    hover:border-amber-400 focus:bg-amber-400 hover:text-amber-400 focus:text-white
+    undefined  loading hover:stroke- border transition-all"
 >
   <svg
     fill="currentColor"
