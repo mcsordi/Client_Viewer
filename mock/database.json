@@ -1,5 +1,5 @@
 {
-  "pessoas": [
+  "people": [
     { "id": "1", "nome": "Tiago", "sobrenome": "Lancelotti" },
     { "id": "2", "nome": "Iris", "sobrenome": "Abravanel" }
   ]

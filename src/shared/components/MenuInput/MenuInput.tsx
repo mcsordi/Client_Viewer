@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { themeContext } from '../../../contexts/ThemeContext/context.ts';
+import { Enviroment } from '../../../environment/index.ts';
 
 export const MenuInput: React.FC<{ visible?: boolean }> = ({
   visible = false,
@@ -9,7 +10,7 @@ export const MenuInput: React.FC<{ visible?: boolean }> = ({
     return (
       visible && (
         <input
-          placeholder="Pesquisar..."
+          placeholder={Enviroment.INPUT_DE_BUSCA}
           type="search"
           className={`${
             light
