@@ -17,7 +17,7 @@ export const tools = [
     text: 'Salvar e voltar',
     icon: <IoMdSave className="text-xl" />,
     type: types.SAVE_BACK_TYPE,
-    loading: true,
+    loading: false,
   },
   {
     text: 'Apagar',

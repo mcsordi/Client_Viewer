@@ -24,11 +24,11 @@ export const MenuButtonTool: React.FC<TButtonToll> = ({
 
   return (
     <button
-      className={`${light ? `bg-slate-200 text-black ` : `bg-zinc-800 text-white`}
+      className={`${light && `bg-slate-200 text-black`} ${!light && !loading && `bg-zinc-800 text-white`}
     flex items-center px-3 py-2 gap-2 uppercase rounded-md font-roboto
     ${!focus && !loading && `first:bg-amber-400 first:text-white first:hover:text-white`} font-medium hover:border
     ${!loading && `hover:border-amber-400 focus:bg-amber-400 hover:text-amber-400 focus:text-white`}
-    ${loading && `animate-pulse text-opacity-0`}  loading hover:stroke- border transition-all`}
+    ${loading && `animate-pulse text-opacity-0 text-slate-200 bg-slate-200`}  loading hover:stroke- border transition-all`}
       onFocus={() => setFocus(true)}
       onBlur={() => setFocus(false)}
       onClick={() => dispatch({ type: type })}
