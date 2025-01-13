@@ -1,6 +1,22 @@
 {
   "people": [
-    { "id": "1", "nome": "Tiago", "sobrenome": "Lancelotti" },
-    { "id": "2", "nome": "Iris", "sobrenome": "Abravanel" }
+    {
+      "id": "1",
+      "nome": "Tiago",
+      "sobrenome": "Lancelotti",
+      "nomeCompleto": "Tiago Lancelotti"
+    },
+    {
+      "id": "2",
+      "nome": "Iris",
+      "sobrenome": "Abravanel",
+      "nomeCompleto": "Iris Abravanel"
+    },
+    {
+      "id": "3",
+      "nome": "Marcio",
+      "sobrenome": "Mastrangi",
+      "nomeCompleto": "Marcio Mastrangi"
+    }
   ]
 }
