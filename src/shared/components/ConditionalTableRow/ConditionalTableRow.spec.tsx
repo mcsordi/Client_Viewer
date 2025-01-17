@@ -17,21 +17,22 @@ describe('<ConditionalTableRow/>', () => {
     );
     const textTd = screen.getByText('chicken');
     expect(textTd.parentElement).toHaveClass('border-zinc-800');
+    expect(textTd.parentElement.firstChild).toHaveClass('bg-neutral-700');
   });
   it('should render a component in the light mode', () => {
     const changeTheme = () => {};
-    render(
+    const { container } = render(
       <themeContext.Provider value={{ light: true, changeTheme }}>
         <ConditionalTableRow>chicken</ConditionalTableRow>
       </themeContext.Provider>,
     );
-    const textTd = screen.getByText('chicken');
-    expect(textTd.parentElement).not.toHaveClass('border-zinc-800');
+    expect(container.firstChild).not.toHaveClass('border-zinc-800');
+    expect(container.firstChild.firstChild).toHaveClass('bg-white');
   });
   it('should match a snapshot', () => {
     const changeTheme = () => {};
     render(
-      <themeContext.Provider value={{ light: true, changeTheme }}>
+      <themeContext.Provider value={{ light: false, changeTheme }}>
         <ConditionalTableRow>chicken</ConditionalTableRow>
       </themeContext.Provider>,
     );

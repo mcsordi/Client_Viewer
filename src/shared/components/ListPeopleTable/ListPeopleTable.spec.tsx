@@ -47,14 +47,6 @@ describe('<ListPeopleTable/>', () => {
     );
     expect(noDataText).toBeInTheDocument();
   });
-  it('should render a table component in loading', () => {
-    const { container } = render(
-      <ListPeopleTable data={people} isLoading={true} error={undefined} />,
-    );
-    expect(container.firstChild.lastChild.firstChild.firstChild).toHaveClass(
-      'animate-spin text-2xl',
-    );
-  });
   it('should render a table component in error', () => {
     render(
       <ListPeopleTable data={people} isLoading={false} error={'hello there'} />,

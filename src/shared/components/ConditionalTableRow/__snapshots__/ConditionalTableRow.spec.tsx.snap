@@ -2,10 +2,10 @@
 
 exports[`<ConditionalTableRow/> should match a snapshot 1`] = `
 <tr
-  class="false border border-t-0 border-l-0 border-r-0 last:border-b-0"
+  class="border-zinc-800 absolute border border-t-0 border-l-0 border-r-0 last:border-b-0 mr-0 sm:mr-6"
 >
   <td
-    class="p-3 "
+    class="bg-neutral-700 p-3 relative  w-screen h-12 rounded-md"
   >
     chicken
   </td>

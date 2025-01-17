@@ -3,6 +3,7 @@ import { themeContext } from '../../../contexts/ThemeContext/context';
 import { ConditionalTableRow } from '../ConditionalTableRow/ConditionalTableRow';
 import { RiLoaderLine } from 'react-icons/ri';
 import { TDataPeopleList } from '../../../services/people/PeopleService';
+import { LoadComponent } from '../LoadComponent/LoadComponent';
 
 type TListPeopleTable = {
   data: TDataPeopleList;
@@ -32,7 +33,7 @@ export const ListPeopleTable: React.FC<TListPeopleTable> = ({
       </thead>
       {isLoading ? (
         <ConditionalTableRow>
-          <RiLoaderLine className="animate-spin text-2xl" />
+          <LoadComponent />
         </ConditionalTableRow>
       ) : (
         <tbody>
