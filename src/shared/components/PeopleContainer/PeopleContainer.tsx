@@ -36,7 +36,7 @@ export const PeopleContainer: React.FC = () => {
 
   return (
     <div>
-      <ListPeopleTable people={people} isLoading={isLoading} error={error} />
+      <ListPeopleTable data={people} isLoading={isLoading} error={error} />
     </div>
   );
 };

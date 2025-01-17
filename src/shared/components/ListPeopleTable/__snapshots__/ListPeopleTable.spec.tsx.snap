@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ListPeopleTable/> should match a snapshot 1`] = `
+<table
+  class="bg-zinc-700 text-white w-full mt-5 rounded-lg"
+>
+  <thead>
+    <tr
+      class="border-zinc-800 border border-t-0 border-l-0 border-r-0"
+    >
+      <th
+        class="p-3  text-start"
+      >
+        Ações
+      </th>
+      <th
+        class="p-3  text-start"
+      >
+        Nome
+      </th>
+      <th
+        class="p-3  text-start"
+      >
+        Email
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr
+      class="border-zinc-800 border border-t-0 border-l-0 border-r-0 last:border-b-0"
+    >
+      <td
+        class="p-3 "
+      >
+        Ações
+      </td>
+      <td
+        class="p-3 "
+      >
+        Tiago Lancelotti
+      </td>
+      <td
+        class="p-3 "
+      >
+        tiago@gmail.com
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;
