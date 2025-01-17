@@ -1,9 +1,8 @@
 import { render } from '@testing-library/react';
-import { Drawer } from './Drawer.tsx';
-import React from 'react';
+import { Drawer } from './Drawer';
 import { MemoryRouter } from 'react-router-dom';
-import { themeContext } from '../../../contexts/ThemeContext/context.ts';
-import { toggle } from '../../../contexts/DrawerToggle/context.ts';
+import { themeContext } from '../../../contexts/ThemeContext/context';
+import { toggle } from '../../../contexts/DrawerToggle/context';
 import { IoMdHome } from 'react-icons/io';
 
 const handleOptions = [

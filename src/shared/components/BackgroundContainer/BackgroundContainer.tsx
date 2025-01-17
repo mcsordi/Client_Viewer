@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
-import { themeContext } from '../../../contexts/ThemeContext/context.ts';
-import { Children } from '../../types/Children.ts';
+import { themeContext } from '../../../contexts/ThemeContext/context';
+import { Children } from '../../types/Children';
 
 export const BackgroundContainer: React.FC<Children> = ({ children }) => {
   const { light } = useContext(themeContext);

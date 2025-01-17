@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { themeContext } from '../../../contexts/ThemeContext/context.ts';
+import { themeContext } from '../../../contexts/ThemeContext/context';
 import { MdLightMode } from 'react-icons/md';
 import { MdDarkMode } from 'react-icons/md';
 

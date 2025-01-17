@@ -1,5 +1,4 @@
 import { render } from '@testing-library/react';
-import React from 'react';
 import { ToggleButton } from './ToggleButton';
 import { toggle } from '../../../contexts/DrawerToggle/context';
 import { IoMdHome } from 'react-icons/io';

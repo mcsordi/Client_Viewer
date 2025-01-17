@@ -1,4 +1,4 @@
-import * as type from "../useReducer/action.ts"
+import * as type from "../useReducer/action"
 export const reducer = (state: { state: string[] }, action: { type: string }) => {
     switch (action.type) {
         case type.SAVE_TYPE: {

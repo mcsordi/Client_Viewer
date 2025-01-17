@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ConditionalTableRow/> should match a snapshot 1`] = `
+<tr
+  class="false border border-t-0 border-l-0 border-r-0 last:border-b-0"
+>
+  <td
+    class="p-3 "
+  >
+    chicken
+  </td>
+</tr>
+`;

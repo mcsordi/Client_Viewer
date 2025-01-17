@@ -1,7 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import { Header } from './Header';
-import React from 'react';
-import { themeContext } from '../../../contexts/ThemeContext/context.ts';
+import { themeContext } from '../../../contexts/ThemeContext/context';
 
 describe('<Header/>', () => {
   const changeTheme = () => {};

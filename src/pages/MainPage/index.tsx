@@ -1,8 +1,8 @@
 import React from 'react';
-import { BackgroundContainer } from '../../shared/components/BackgroundContainer/BackgroundContainer.tsx';
-import { Drawer } from '../../shared/components/Drawer/Drawer.tsx';
-import { ToggleButton } from '../../shared/components/ToggleButton/ToggleButton.tsx';
-import { Header } from '../../shared/components/Header/Header.tsx';
+import { BackgroundContainer } from '../../shared/components/BackgroundContainer/BackgroundContainer';
+import { Drawer } from '../../shared/components/Drawer/Drawer';
+import { ToggleButton } from '../../shared/components/ToggleButton/ToggleButton';
+import { Header } from '../../shared/components/Header/Header';
 
 type TOptionsPage = {
   children: React.ReactNode;
@@ -14,7 +14,7 @@ export const MainPage: React.FC<TOptionsPage> = ({ children, menu, title }) => {
   return (
     <BackgroundContainer>
       <Drawer />
-      <div className="w-full px-6">
+      <div className="w-full sm:px-6">
         <div className="flex items-center justify-between w-full py-6 sm:py-8 md:py-10">
           <div className="flex gap-3">
             <ToggleButton />

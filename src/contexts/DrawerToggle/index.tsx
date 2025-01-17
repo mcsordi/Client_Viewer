@@ -1,7 +1,7 @@
 import React, { useCallback, useState } from 'react';
-import { toggle } from './context.ts';
-import { Children } from '../../shared/types/Children.ts';
-import { TNavDrawer } from '../../shared/types/NavDrawer.ts';
+import { toggle } from './context';
+import { Children } from '../../shared/types/Children';
+import { TNavDrawer } from '../../shared/types/NavDrawer';
 export const DrawerToggle: React.FC<Children> = ({ children }) => {
   const [show, setShow] = useState<boolean>(false);
   const [drawerOptions, setDrawerOptions] = useState<TNavDrawer[]>([]);

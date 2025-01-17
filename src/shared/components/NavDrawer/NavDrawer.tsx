@@ -1,8 +1,8 @@
 import React, { useContext } from 'react';
-import { themeContext } from '../../../contexts/ThemeContext/context.ts';
+import { themeContext } from '../../../contexts/ThemeContext/context';
 import { Link, useLocation } from 'react-router-dom';
-import { TNavDrawer } from '../../types/NavDrawer.ts';
-import { toggle } from '../../../contexts/DrawerToggle/context.ts';
+import { TNavDrawer } from '../../types/NavDrawer';
+import { toggle } from '../../../contexts/DrawerToggle/context';
 
 export const NavDrawer: React.FC<TNavDrawer> = ({ icon, text, whereTo }) => {
   const { light } = useContext(themeContext);

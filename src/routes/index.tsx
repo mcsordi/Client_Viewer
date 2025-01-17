@@ -1,14 +1,16 @@
 import React, { useContext, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import { toggle } from '../contexts/DrawerToggle/context.ts';
+import { toggle } from '../contexts/DrawerToggle/context';
 import { IoMdHome } from 'react-icons/io';
-import { FaStar } from 'react-icons/fa';
-import { MainPage } from '../pages/MainPage/index.tsx';
-import { FaHeart } from 'react-icons/fa';
-import { MenuBarContainer } from '../shared/components/MenuBarContainer/MenuBarContainer.tsx';
+import { MainPage } from '../pages/MainPage/index';
+import { MenuBarContainer } from '../shared/components/MenuBarContainer/MenuBarContainer';
+import { FaCity } from 'react-icons/fa';
+import { IoMdPeople } from 'react-icons/io';
+import { PeopleContainer } from '../shared/components/PeopleContainer/PeopleContainer';
 
 export const AppRoutes = () => {
   const { handleDrawerOptions } = useContext(toggle);
+
   useEffect(() => {
     handleDrawerOptions([
       {
@@ -17,14 +19,14 @@ export const AppRoutes = () => {
         whereTo: '/',
       },
       {
-        icon: <FaStar className="text-xl" />,
-        text: 'Cidades',
-        whereTo: '/cidades',
+        icon: <IoMdPeople className="text-xl" />,
+        text: 'Pessoas',
+        whereTo: `/pessoas`,
       },
       {
-        icon: <FaHeart className="text-xl" />,
-        text: 'Estados',
-        whereTo: '/estados',
+        icon: <FaCity className="text-xl" />,
+        text: 'Cidades',
+        whereTo: '/cidades',
       },
     ]);
   }, []);
@@ -42,17 +44,20 @@ export const AppRoutes = () => {
         }
       />
       <Route
-        path="/cidades"
+        path={`/pessoas`}
         element={
-          <MainPage title="Cidades">
-            <p>página secundária</p>
+          <MainPage
+            title="Listagem de pessoas"
+            menu={<MenuBarContainer visible text="nova" />}
+          >
+            <PeopleContainer />
           </MainPage>
         }
       />
       <Route
-        path="/estados"
+        path="/cidades"
         element={
-          <MainPage title="Estados">
+          <MainPage title="Cidades">
             <p>página três</p>
           </MainPage>
         }

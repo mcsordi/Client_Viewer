@@ -5,7 +5,11 @@ exports[`<MenuButton/> should match a snapshot 1`] = `
   <button
     class="font-roboto text-lg flex items-center gap-2 border bg-slate-500 text-white px-3.5 rounded-md font-bold hover:bg-amber-400 transition-all uppercase"
   >
-    nova
+    <span
+      class="hidden sm:flex md:hidden lg:flex"
+    >
+      nova
+    </span>
     <svg
       fill="currentColor"
       height="1em"

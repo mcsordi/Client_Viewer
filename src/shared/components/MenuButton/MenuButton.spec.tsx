@@ -1,6 +1,5 @@
 import { render, screen } from '@testing-library/react';
 import { MenuButton } from './MenuButton';
-import React from 'react';
 
 describe('<MenuButton/>', () => {
   it('should render a MenuButton component', () => {

@@ -1,12 +1,12 @@
 import React, { useContext } from 'react';
-import { MenuInput } from '../MenuInput/MenuInput.tsx';
-import { MenuButton } from '../MenuButton/MenuButton.tsx';
-import { themeContext } from '../../../contexts/ThemeContext/context.ts';
-import { MenuButtonTool } from '../MenuButtonTools/MenuButtonTool.tsx';
-import { MenuContainerTools } from '../MenuContainerTools/MenuContainerTools.tsx';
-import { tools } from '../MenuButtonTools/Tools.tsx';
-import { FocusTool } from '../../../contexts/FocusTool/index.tsx';
-import { TMenuButton } from '../../types/MenuButton.ts';
+import { MenuInput } from '../MenuInput/MenuInput';
+import { MenuButton } from '../MenuButton/MenuButton';
+import { themeContext } from '../../../contexts/ThemeContext/context';
+import { MenuButtonTool } from '../MenuButtonTools/MenuButtonTool';
+import { MenuContainerTools } from '../MenuContainerTools/MenuContainerTools';
+import { tools } from '../MenuButtonTools/Tools';
+import { FocusTool } from '../../../contexts/FocusTool/index';
+import { TMenuButton } from '../../types/MenuButton';
 
 export const MenuBarContainer: React.FC<TMenuButton> = ({
   visible,

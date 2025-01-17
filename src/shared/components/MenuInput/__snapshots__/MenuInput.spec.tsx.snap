@@ -7,5 +7,6 @@ exports[`<MenuInput/> should match a snapshot 1`] = `
              outline-none text-lg border rounded-md p-2 font-medium sm:w-96"
   placeholder="Pesquisar..."
   type="search"
+  value="cavalo"
 />
 `;

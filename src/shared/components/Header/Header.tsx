@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { themeContext } from '../../../contexts/ThemeContext/context.ts';
+import { themeContext } from '../../../contexts/ThemeContext/context';
 
 export const Header: React.FC<{ header: string }> = ({ header }) => {
   const { light } = useContext(themeContext);

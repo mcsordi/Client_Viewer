@@ -1,8 +1,7 @@
-import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
-import { AppRoutes } from './routes/index.tsx';
-import { DrawerToggle } from './contexts/DrawerToggle/index.tsx';
-import { ThemeContext } from './contexts/ThemeContext/index.tsx';
+import { AppRoutes } from './routes/index';
+import { DrawerToggle } from './contexts/DrawerToggle/index';
+import { ThemeContext } from './contexts/ThemeContext/index';
 
 function App() {
   return (

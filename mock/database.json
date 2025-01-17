@@ -1,22 +1,26 @@
 {
   "people": [
     {
-      "id": "1",
-      "nome": "Tiago",
-      "sobrenome": "Lancelotti",
-      "nomeCompleto": "Tiago Lancelotti"
+      "fullName": "Tiago Lancelotti",
+      "email": "tiago@gmail.com",
+      "id": 1,
+      "cityId": 1
     },
     {
-      "id": "2",
-      "nome": "Iris",
-      "sobrenome": "Abravanel",
-      "nomeCompleto": "Iris Abravanel"
+      "fullName": "Julia Abravanel",
+      "email": "julia@gmail.com",
+      "id": 2,
+      "cityId": 2
     },
     {
-      "id": "3",
-      "nome": "Marcio",
-      "sobrenome": "Mastrangi",
-      "nomeCompleto": "Marcio Mastrangi"
+      "fullName": "Kleber Bambam",
+      "email": "Kleber@gmail.com",
+      "id": 3,
+      "cityId": 2
     }
+  ],
+  "cities": [
+    { "id": 1, "nameCity": "Campo Mourão", "stateCity": "PR" },
+    { "id": 2, "nameCity": "Maringa", "stateCity": "PR" }
   ]
 }

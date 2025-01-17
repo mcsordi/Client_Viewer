@@ -1,8 +1,8 @@
 import React, { useContext, useReducer } from 'react';
-import { themeContext } from '../../../contexts/ThemeContext/context.ts';
-import { focusTool } from '../../../contexts/FocusTool/context.ts';
-import { reducer } from './useReducer/reducer.ts';
-import { values } from './useReducer/state.ts';
+import { themeContext } from '../../../contexts/ThemeContext/context';
+import { focusTool } from '../../../contexts/FocusTool/context';
+import { reducer } from './useReducer/reducer';
+import { values } from './useReducer/state';
 
 type TButtonToll = {
   text?: string;

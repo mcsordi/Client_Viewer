@@ -1,6 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import { ImgContainer } from './ImgContainer.tsx';
-import React from 'react';
+import { ImgContainer } from './ImgContainer';
 
 describe('<ImgContainer/>', () => {
   it('should render an img with a image adress', () => {

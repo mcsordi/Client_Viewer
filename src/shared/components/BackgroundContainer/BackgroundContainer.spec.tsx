@@ -1,6 +1,5 @@
 import { render, screen } from '@testing-library/react';
 import { BackgroundContainer } from './BackgroundContainer';
-import React from 'react';
 import { themeContext } from '../../../contexts/ThemeContext/context';
 
 describe('<BackgroundContainer/>', () => {

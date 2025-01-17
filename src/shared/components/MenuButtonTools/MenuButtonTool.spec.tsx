@@ -1,9 +1,8 @@
 import { render, screen } from '@testing-library/react';
 import { MenuButtonTool } from './MenuButtonTool';
 import { PiPlusBold } from 'react-icons/pi';
-import React from 'react';
-import { themeContext } from '../../../contexts/ThemeContext/context.ts';
-import { focusTool } from '../../../contexts/FocusTool/context.ts';
+import { themeContext } from '../../../contexts/ThemeContext/context';
+import { focusTool } from '../../../contexts/FocusTool/context';
 
 describe('<MenuButtonTools/>', () => {
   it('should render a MenuButtonTool component', () => {

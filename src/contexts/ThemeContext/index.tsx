@@ -1,6 +1,6 @@
 import React, { useCallback, useState } from 'react';
-import { themeContext } from './context.ts';
-import { Children } from '../../shared/types/Children.ts';
+import { themeContext } from './context';
+import { Children } from '../../shared/types/Children';
 
 export const ThemeContext: React.FC<Children> = ({ children }) => {
   const [light, setLight] = useState<boolean>(true);

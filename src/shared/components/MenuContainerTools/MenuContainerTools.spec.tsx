@@ -1,6 +1,5 @@
 import { render, screen } from '@testing-library/react';
 import { MenuContainerTools } from './MenuContainerTools';
-import React from 'react';
 
 describe('<MenuContainerTools/>', () => {
   it('should render a MenuContainerTools component', () => {
